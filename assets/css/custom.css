@@ -1,0 +1,427 @@
+gamebody {
+  background-image: linear-gradient(to right bottom, #7ed56fc5, #28b485bb),
+    url(http://www.onlygfx.com/wp-content/uploads/2015/11/blood-splatter-9.jpg);
+  background-size: cover;
+  background-position: top;
+}
+img {
+  width: 175px;
+  height: 175px;
+  float: left;
+  shape-outside: circle(50%);
+  margin-right: 10px;
+}
+body {
+  font-family: eczar;
+  width: 70%;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px #999;
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: rgb(151, 21, 21);
+}
+input[type="range"]::-moz-range-thumb {
+  background-color: rgb(158, 19, 19);
+}
+input[type="range"]::-ms-thumb {
+  background-color: rgb(109, 25, 25);
+}
+
+/***** These are to edit the thumb and the text inside the thumb *****/
+input[type="range"] + .thumb {
+  background-color: #dedede;
+}
+input[type="range"] + .thumb.active .value {
+  color: rgb(128, 49, 49);
+}
+
+html {
+  background: url(http://caskia.me/wp-content/uploads/2018/03/hd-fire-backgrounds-group-76-throughout-wallpaper.jpg);
+}
+
+#questions {
+  background-color: rgba(194, 76, 55, 0.89);
+  overflow: hidden;
+  margin: 10px;
+  min-height: 170px;
+  width: 45%;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+#actualGame {
+  display: none;
+  background-color: rgba(255, 72, 0, 0.308);
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  padding: 0;
+}
+#results {
+  display: none;
+  background-color: rgba(21, 255, 0, 0.308);
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+#title {
+  padding: 17% 0;
+  animation: moveInRight 1s ease-out;
+}
+
+.higherZ {
+  z-index: 6;
+}
+
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+
+.card-click {
+  /* border: 3px solid green; */
+
+  background-color: SlateGray;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  -moz-opacity: 70%;
+  -webkit-opacity: 70%;
+  z-index: 8;
+}
+
+.text-block {
+  /* position: absolute; */
+  top: 20px;
+  left: 45px;
+  /* padding: 10px; */
+  z-index: -1;
+  /* background-color: black;
+  color: white; */
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.p {
+  text-align: center;
+}
+
+.bttn:link,
+.bttn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+}
+.justinline {
+  display: inline-block;
+}
+
+.bttn:hover {
+  transform: translateY(-3px);
+}
+.bttn:active {
+  translate: translateY(-1px);
+}
+.bttn-white {
+  background-color: #fff;
+  color: #777;
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.radioButtons {
+  font-family: "Old Standard TT", serif;
+}
+.smallerQuestions {
+  padding: 0px 30px 10px 30px;
+  font-size: 2vh;
+}
+#paddedScore {
+  padding: 30px 30px 0px 30px;
+}
+#gameTitle {
+  padding-top: 25px;
+}
+
+/* Battlefield CSS */
+
+.playerArea {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#p1area {
+  left: 0;
+}
+
+#p2area {
+  right: 0;
+}
+
+.playerIcons {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#p1icon {
+}
+
+#p2icon {
+}
+
+.playerName {
+  margin: 0;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#p1name {
+}
+
+#p2name {
+}
+
+.player1cards {
+}
+.player2cards {
+}
+
+.cards {
+  width: 190px;
+  position: absolute;
+  clip: rect(5px, 160px, 175px, 25px);
+}
+
+.drawpile {
+  width: 140px;
+  float: right;
+  margin-top: 50px;
+}
+
+#p1draw {
+  margin-top: 100px;
+}
+
+#p2draw {
+  margin-top: 150px;
+}
+
+.discardpile {
+  width: 140px;
+  float: left;
+  margin-top: 50px;
+}
+
+#p2discard {
+  margin-top: 200px;
+}
+
+.battlefield {
+  height: 200px;
+  background: blue;
+  width: 100%;
+}
+
+#p2battlefield {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* ENDS CSS FOR BATTLEFIELD */
+
+/* 
+font-family: 'Shrikhand', cursive;
+font-family: 'Old Standard TT', serif;
+font-family: 'Permanent Marker', cursive;
+*/
+
+.battlefield-row {
+  height: 100%;
+}
+.battlefield-card {
+  background: green;
+  border: 1px solid black;
+  height: 100%;
+  margin: 0 5px;
+}
+
+#endturn {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.nudge-left {
+  /* left: -35px; */
+  left: 0%;
+}
+
+/*===================*/
+/*Poof Function*/
+/*===================*/
+
+.node-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.node {
+  background-color: #69abe2;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  margin-top: 40px;
+  position: relative;
+  width: 30px;
+}
+
+.smoke,
+.smoke-ring {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 6px solid #eee;
+  border-radius: 30px;
+  transform: scale(1);
+}
+.smoke {
+  z-index: 2;
+}
+.smoke-ring {
+  z-index: -2;
+}
+
+.poofing .smoke {
+  animation: poof 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes poof {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.battlefield-card .smoke {
+  opacity: 1;
+}
+
+.battlefield-card:not(.poofing) .smoke {
+  opacity: 0;
+}
+
+/*===================*/
+/*Chat Box*/
+/*===================*/
+
+#chat {
+  /* Positioning */
+  position: sticky;
+  bottom: 30px;
+
+  /* Box-model */
+  width: 600px;
+  height: 150px;
+
+  /* Visual */
+  padding: 10px;
+  margin: 20px auto;
+}
+
+#chat-messages {
+  /* Box-model */
+  height: 125px;
+  overflow: auto;
+
+  /* Visual */
+  background-color: #fffcf7;
+}
+
+#chat-bar {
+  /* Positioning */
+  position: relative;
+  bottom: 10px;
+}
+
+#chat-input {
+  /* Box-model */
+  width: 550px;
+}
+
+#chat-send {
+  /* Box-model */
+  width: 60px;
+}
+
+.question {
+  text-align: center;
+}
+
+.playername {
+  margin-left: 125px;
+}
+
+#gamestart {
+  margin-left: 250px;
+}
+
+#submitRange {
+  /* margin-left: 325px; */
+  color: #fff;
+}
+
+.outsideSubmitDiv {
+  margin-left: 300px;
+
+}
+
+#suckagemeter {
+  color: crimson;
+}
